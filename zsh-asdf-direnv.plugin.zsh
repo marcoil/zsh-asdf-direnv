@@ -77,7 +77,6 @@ _zsh_asdf_direnv_load() {
   # if specified only load the asdf wrapper, leaving the shims out of path
   if test "$ZSH_ASDF_DIRENV_LIBONLY" = "true"; then
     PATH="$PATH:$ASDF_DIR/bin"
-    source "$ASDF_DIR/lib/asdf.sh"
   else
     source "$ASDF_DIR/asdf.sh"
   fi
